@@ -16,19 +16,7 @@ search:
 
 # Welcome to Prefect Cloud
 
-Prefect Cloud is a hosted workflow application framework that provides all the capabilities of Prefect server plus additional features, such as:
-
-- automations, events, and webhooks so you can create event-driven workflows
-- workspaces, RBAC, SSO, audit logs and related user management tools for collaboration
-- push work pools for running flows on serverless infrastructure without a worker
-- error summaries powered by Marvin AI to help you resolve errors faster
-
-!!! success "Getting Started with Prefect Cloud"
-    Ready to jump right in and start running with Prefect Cloud? See the [Quickstart](/getting-started/quickstart/) and follow the instructions on the **Cloud** tabs to write and deploy your first Prefect Cloud-monitored flow run.
-
-![Viewing a workspace dashboard in the Prefect Cloud UI](/img/ui/cloud-dashboard.png)
-
-Prefect Cloud includes all the features in the open-source Prefect server plus the following:
+Prefect Cloud is a hosted workflow application framework that provides all the capabilities of the open-source Prefect server, plus the following:
 
 !!! cloud-ad "Prefect Cloud features"
     - [User accounts](#user-accounts) &mdash; personal accounts for working in Prefect Cloud.
@@ -43,11 +31,16 @@ Prefect Cloud includes all the features in the open-source Prefect server plus t
     - Error summaries  &mdash; (enabled by Marvin AI) distill the error logs of `Failed` and `Crashed` flow runs into actionable information.
     - [Push work pools](/guides/deployment/push-work-pools/) &mdash; run flows on your serverless infrastructure without running a worker.
 
+![Viewing a workspace dashboard in the Prefect Cloud UI](/img/ui/cloud-dashboard.png)
+
+!!! success "Getting Started with Prefect Cloud"
+    If you're ready to start with Prefect Cloud, see the [Quickstart](/getting-started/quickstart/) and follow the instructions on the **Cloud** tabs to write and deploy your first Prefect Cloud-monitored flow run.
+
 ## User accounts
 
 When you sign up for Prefect Cloud, an account and a user profile are automatically provisioned for you.
 
-Your profile is the place where you'll manage settings related to yourself as a user, including:
+Your profile is where you manage your user settings, including:
 
 - Profile, including profile handle and image
 - API keys
@@ -90,7 +83,7 @@ Each workspace keeps track of its own:
 
 ## Events
 
-Prefect Cloud allows you to see your [events](/cloud/events/). Events provide information about the state of your workflows, and can be used as [automation](/concepts/automations/) triggers.
+Prefect Cloud allows you to see your [events](/cloud/events/). Use events to provide information about your workflows, or as [automation](/concepts/automations/) triggers.
 
 ![Prefect UI](/img/ui/event-feed.png)
 
